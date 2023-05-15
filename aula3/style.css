@@ -1,0 +1,12 @@
+div {
+    background-color: royalblue;
+    width: 800px;
+    height: 300px;
+    margin: auto;
+}
+
+@media (max-width: 1000px) {
+    div {
+        width: 500px;
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aulas iniciais</title>
+    <style>
+        video {
+            width: 300px;
+        }
+        img {
+            width: 300px;
+        }
+        form {
+            text-align: center;
+        }
+        .eh {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 4px;
+        }
+        .eh div {
+            width: 400px;
+            height: 400px;
+            background-color: rgb(177, 177, 177);
+            border: 4px solid rgba(220, 20, 60, 0.703);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* border-radius: 20px; */
+        }
+        h1 {
+            font-size: 40px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tags úteis</h1>
+    <div class="eh">
+        <div>
+            <video src="video/cidade.mp4" type="video/mp4" controls></video>
+        </div>
+        <div>
+            <audio src="audio/music.mp3" controls type="audio/mpeg"></audio>
+        </div>
+        <div>
+            <figure>
+                <img src="img/ricefield.jpg" alt="um campo de arroz">
+                    <figcaption> Um lindo campo de arroz</figcaption>
+            </figure>
+        </div>
+        <div>
+            <form action="">
+                <input type="text" name="" id="" required placeholder="Seu nome">
+                <input type="email" name="" id="" required placeholder="Seu email" autofocus>
+                <input type="submit" value="MANDAR">
+            </form>
+        </div>
+        <div>
+            <p contenteditable="true">asofhdlsa lhdfldh texto dasçhfçsd</p>
+        </div>
+        <div>
+            <details open>
+                <summary>cachorro</summary>
+                <p>mamífero e pet</p>
+            </details>
+            <details>
+                <summary>gato</summary>
+                <p>mamífero felino</p>
+            </details>
+        </div>
+        <div>
+            <form action="">
+                <input list="animal" name="animal">
+                <datalist id="animal">
+                    <option value="cachorro"></option>
+                    <option value="elefante"></option>
+                    <option value="tigre"></option>
+                </datalist>
+            </form>
+        </div>
+        <div>
+            <p>barra de loading</p>
+            <progress value="30" max="100"></progress>
+        </div>
+    </div>
+</body>
+</html>

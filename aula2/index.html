@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 2</title>
+    <style>
+        @font-face {
+            font-family: "Wix";
+            src: url(/Wix_Madefor_Display/WixMadeforDisplay-VariableFont_wght.ttf);
+        }
+        .animacao {
+            height: 100px;
+            width: 100px;
+        }
+        .animation-div {
+            background-color: gray;
+            animation-name: animacao;
+            animation-duration: 3s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+        }
+        .animation-div2 {
+            background-color: rgb(178, 36, 36);
+            animation-name: animacao2;
+            animation-duration: 7s;
+        }
+        .fontes {
+            font-family: 'Wix';
+            /* isso é uma variavel, basicamente */
+            font-weight: bolder;
+        }
+        @keyframes animacao {
+            from {
+                background-color: gray;
+            }
+            to {
+                background-color: aqua;
+                width: 300px;
+            }
+        }
+        @keyframes animacao2 {
+            0% {
+
+            }
+            50% {
+                width: 200px;
+            }
+            75% {
+                background-color: blue;
+            }
+            100% {
+                transform: rotateX(45deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="animacao animation-div"></div>
+    <div class="animacao animation-div2"></div>
+    <div class="fontes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quidem reprehenderit quis omnis alias porro ipsa inventore, fugiat harum delectus error doloremque beatae tempore odio repudiandae molestiae ea placeat ab.</div>
+
+</body>
+</html>
