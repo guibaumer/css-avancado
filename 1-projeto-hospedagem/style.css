@@ -8,6 +8,13 @@
 body {
     font-family: 'Work Sans', sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
 header {
     height: 80px;
     width: 100%;
@@ -77,7 +84,7 @@ header li:hover {
     background-image: url(img/mainbanner.png);
     background-size: cover;
     background-position: center center;
-    min-height: 90vh;
+    min-height: 100vh;
 }
 h1 {
     font-family: 'Bruno Ace', cursive;
@@ -85,6 +92,10 @@ h1 {
     font-size: 80px;
     margin-bottom: 10px;
     text-align: center;
+    font-weight: bolder;
+}
+h1:hover {
+    font-weight: light;
 }
 h2 {
     font-size: 50px;
