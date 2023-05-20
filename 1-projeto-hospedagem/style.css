@@ -92,10 +92,11 @@ h1 {
     font-size: 80px;
     margin-bottom: 10px;
     text-align: center;
-    font-weight: bolder;
+    font-weight: lighter;
 }
 h1:hover {
-    font-weight: light;
+    font-weight: bolder;
+    cursor: pointer;
 }
 h2 {
     font-size: 50px;
@@ -322,4 +323,51 @@ footer a {
     text-decoration: none;
     color: #4d4c4c;
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 1185px) {
+    section.section.qualities {
+        padding-top: 30px;
+    }
+}
+@media screen and (max-width: 540px) {
+    div.planos div.plano-div {
+        flex-basis: 90%;
+    }
+    header li {
+        padding: 4px;
+    }
+    header div {
+        /* padding: 5px; */
+        margin: 5px;
+    }
+    header img {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    h2 {
+        font-size: 30px !important;
+    }
+    p {
+        font-size: 21px !important;
+    }
+    .section-formulario input, textarea {
+        font-size: 21px;
+    }
+    .section-dominio #dominio, #buscar-dominio {
+        font-size: 21px;
+    }
+    .div-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .dados-form {
+        width: 100%;
+        height: 50px;
+    }
+    header ul li:nth-child(2), li:nth-child(3) {
+        display: none;
+    }
 }
