@@ -187,11 +187,13 @@ input {
 .emoji {
     font-size: 25px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 .input-typing {
     height: 70%;
     font-size: 18px;
     padding-left: 25px;
+    margin-right: 10px;
 }
 .conversation {
     position: absolute;
