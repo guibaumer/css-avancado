@@ -33,10 +33,11 @@ header nav {
     align-items: flex-end;
     justify-content: flex-start;
     height: 45px;
-    /* width: 700px; */
     margin-left: 155px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0; 
+    overflow-x: auto;
+    overflow-y: none;
 }
 header img {
     width: 100px;
@@ -70,6 +71,9 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateY(13px);
+    overflow-y: none;
+
 }
 .icons-list li {
     list-style-type: none;
@@ -219,6 +223,11 @@ aside {
     main {
         margin-left: 0;
         margin: 10px;
+    }
+}
+@media (max-width: 1015px) {
+    header nav {
+        margin-left: 10px;
     }
 }
 @media (max-width: 1230px) {
