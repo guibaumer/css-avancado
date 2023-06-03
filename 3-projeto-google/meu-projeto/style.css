@@ -215,6 +215,12 @@ aside {
     margin-top: 10px;
 }
 
+@media (max-width: 780px) {
+    main {
+        margin-left: 0;
+        margin: 10px;
+    }
+}
 @media (max-width: 1230px) {
     aside {
         display: none;
