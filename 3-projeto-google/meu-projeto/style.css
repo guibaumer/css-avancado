@@ -13,7 +13,8 @@ body {
 }
 header {
     background-color: #FFF;
-    height: 140px;
+    height: 160px;
+    /* 140 */
     display: flex;
     flex-direction: column;
     justify-content: top;  
@@ -33,11 +34,12 @@ header nav {
     align-items: flex-end;
     justify-content: flex-start;
     height: 45px;
+    /* 45 */
     margin-left: 155px;
     /* position: absolute; */
-    bottom: 0; 
+    /* bottom: 0;  */
+    transform: translateY(31px);
     overflow-x: auto;
-    overflow-y: none;
 }
 header img {
     width: 100px;
@@ -47,6 +49,7 @@ header img {
 header input {
     height: 50px;
     width: 700px;
+    width: calc(80vw - 150px);
     border-radius: 30px;
     border: 1px solid rgba(171, 168, 168, 0.491);
     padding-left: 30px;
@@ -71,8 +74,9 @@ form {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(13px);
-    overflow-y: none;
+    height: 45px;
+    /* transform: translateY(13px); */
+    /* background-color: red; */
 
 }
 .icons-list li {
@@ -80,6 +84,7 @@ form {
     margin-right: 15px;
     padding: 0px 9px 14px 9px;
     color: var(--custom-gray);
+    margin: 0;
 }
 .icons-list span {
     font-size: 21px;
@@ -219,19 +224,81 @@ aside {
     margin-top: 10px;
 }
 
+
+@media (max-width: 1230px) {
+    aside {
+        display: none;
+    }
+   
+}
+
+@media (max-width: 1015px) {
+    header nav {
+        margin-left: 10px;
+    }
+    
+    .inline {
+        left: 75%;
+    }
+}
+
+@media (max-width: 870px) {
+    
+    nav {
+        transform: translateY(30px);
+        height: 80px;
+        /* aqui */
+    }
+    .icons-list li {
+        margin: 0;
+    }
+}
+
 @media (max-width: 780px) {
     main {
         margin-left: 0;
         margin: 10px;
     }
+    
 }
-@media (max-width: 1015px) {
+
+@media (max-width: 750px) {
+    header {
+        height: 185px;
+    }
     header nav {
-        margin-left: 10px;
+        height: 70px;
+    }
+   
+    .inline {
+        left: 70%;
+    }
+
+}
+
+@media (max-width: 700px) {
+    header .flex {
+        flex-direction: column;
+    }
+    header input {
+        width: 95vw;
+    }
+    header img {
+        margin-bottom: 10px;
+        align-self: flex-start;
+    }
+    header nav {
+        /* display: none; */
+    } 
+    header {
+        height: 230px;
+    }
+    
+    .inline {
+        left: auto;
+        right: 5%;
     }
 }
-@media (max-width: 1230px) {
-    aside {
-        display: none;
-    }
-}
+
+
+
